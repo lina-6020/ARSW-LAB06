@@ -1,0 +1,27 @@
+form {
+  margin: 20px 0;
+}
+
+table {
+  width: 50%;
+  margin-bottom: 20px;
+  border-collapse: collapse;
+  float: left;
+}
+
+table,
+th,
+td {
+  border: 1px solid #cdcdcd;
+}
+
+table th,
+table td {
+  padding: 10px;
+  text-align: left;
+}
+
+canvas {
+  float: right;
+  border: 1px solid #000000;
+}
