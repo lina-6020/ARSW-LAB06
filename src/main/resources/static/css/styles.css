@@ -6,9 +6,14 @@ table {
   width: 50%;
   margin-bottom: 20px;
   border-collapse: collapse;
-  float: left;
 }
 
+.izquierda {
+  float: right;
+}
+.derecha {
+  float: left;
+}
 table,
 th,
 td {
@@ -22,6 +27,5 @@ table td {
 }
 
 canvas {
-  float: right;
   border: 1px solid #000000;
 }

@@ -8,6 +8,7 @@
     <script src="/webjars/jquery/3.1.0/jquery.min.js"></script>
     <script src="/webjars/bootstrap/4.1.2/js/bootstrap.min.js"></script>
     <script src="js/apimock.js"></script>
+    <script src="js/apiclient.js"></script>
     <script src="js/app.js"></script>
     <link rel="stylesheet"
       href="/webjars/bootstrap/4.1.2/css/bootstrap.min.css" />
@@ -22,22 +23,30 @@
             <button onClick="handlerBlueprints.updateBlueprints(Author.value)">Get blueprints</button>
         </div>
         <div>
-            <h2 id="campo2">Aqui va el nombre del author</h2>
+            <div class="derecha">
+                <h2 id="campo2">'s blueprints</h2>
 
-            <table id="blueprints">
-                <tr>
-                    <th scope="col">Blueprint name</th>
-                    <th scope="col">Number of point</th>
-                    <th scope="col">Open</th>
-                </tr>
-                
-            </table>
-            <div id="totalPoints">
+                <table id="blueprints">
+                    <thead>
+                        <tr>
+                            <th scope="col">Blueprint name</th>
+                            <th scope="col">Number of point</th>
+                            <th scope="col">Open</th>
+                        </tr>
+                        <tbody>
+                        </tbody>
+                    </thead>
+                    
+                </table>
+                <h2 id="totalPoints"></h2>
+            </div>
+            <div class="izquierda">
+                <h2 id="canvasTitle">Current Blueprint</h2>
+                <canvas id="myCanvas" width="400" height="400"> </canvas>    
             </div>
             
-            <h2 id="canvasTitle">Current Blueprint</h2>
-            <canvas id="myCanvas" width="400" height="400"> </canvas>
             
+           
         </div>
 
     </div>
