@@ -23,13 +23,13 @@ var handlerBlueprints = (function () {
       });
       var total = listBlueprints.reduce((a, b) => a + b.points, 0);
 
-      $("#totalPoints").text("Total points: " + total);
+      $("#totalPoints").text("Total Points: " + total);
       $("#blueprints tbody").empty();
       listBlueprints.map((blueprint) =>
         $("#blueprints tbody").append(
           `<tr><td>${blueprint.name}</td>
       <td>${blueprint.points}</td>
-      <td><button type="button" onClick='handlerBlueprints.getPoints("${blueprint.name}")'>Open</button></td></tr>`
+      <td><button type="button" class="boton_personalizado" onClick='handlerBlueprints.getPoints("${blueprint.name}")'>Open</button></td></tr>`
         )
       );
     }
@@ -39,6 +39,7 @@ var handlerBlueprints = (function () {
     _setName(sendAuthor);
     api.getBlueprintsByAuthor(sendAuthor, actualizar);
     //apimock.getBlueprintsByAuthor(author, actualizar);
+
   };
 
   var putPoints = function (listPoints) {

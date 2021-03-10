@@ -1,18 +1,33 @@
 form {
-  margin: 20px 0;
+  margin: 800px 0;
+}
+body {
+  width: 100%;
+  height:100%;
+  background-image: url("https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQcvHRvEgSLL_Y5ejK9_dL2C49pKqaYYWiUHA&usqp=CAU");
+  background-size: 100% 100%;
+  background-color: transparent;
 }
 
-table {
-  width: 50%;
-  margin-bottom: 20px;
-  border-collapse: collapse;
+.p {
+  font: oblique bold 120% cursive;
+  color: #257ad0;
+}
+.ex1 {
+  margin: 5%;
+  width: 88%;
+  font-family: "Segoe UI";
 }
 
-.izquierda {
-  float: right;
-}
 .derecha {
+  margin: 5% 20%;
+  float: right;
+  width: 200px;
+}
+.izquierda {
+  margin: 5% 15%;
   float: left;
+  width: 200px;
 }
 table,
 th,
@@ -22,10 +37,42 @@ td {
 
 table th,
 table td {
+  border: #ffffff 4px solid;
+  border-radius: 4px;
   padding: 10px;
   text-align: left;
 }
 
 canvas {
-  border: 1px solid #000000;
+  border: #ffffff 4px solid;
+  border-radius: 4px;
 }
+.input_text {
+  text-decoration: none;
+  padding: 1px;
+  padding-left: 6px;
+  padding-right: 6px;
+  background-color: #fffdfd;
+  color: #81b2e5;
+  border-radius: 4px;
+  border: 1px #013870;
+}
+.boton_personalizado {
+  text-decoration: none;
+  padding: 1px;
+  padding-left: 6px;
+  padding-right: 6px;
+  font-family: cursive;
+  font-weight: 300;
+  font-size: 25px;
+  font-style: italic;
+  color: #81b2e5;
+  background-color: #f3f6f6;
+  border-radius: 4px;
+  border: 1px #013870;
+}
+.boton_personalizado:hover{
+  opacity: 0.6;
+  text-decoration: none;
+}
+

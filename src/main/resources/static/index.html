@@ -1,6 +1,7 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
+
     <title>Blueprints</title>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -15,22 +16,26 @@
     <link rel="stylesheet" type="text/css" href="./css/styles.css"/>
 </head>
 <body>
-    <div id="App">
-        <h1>Blueprints</h1>
-        <div>
+
+
+    <div class="ex1",id="App">
+
+        <div class="p">
+            <h1>Blueprints</h1>
             <h2 id="campo1">Author</h2>
-            <input type="text" id="Author" placeholder="name"/>
-            <button onClick="handlerBlueprints.updateBlueprints(Author.value)">Get blueprints</button>
+            <input class="input_text" type="text" id="Author" placeholder="Name"/>
+            <button class="boton_personalizado" onClick="handlerBlueprints.updateBlueprints(Author.value)">Get Blueprints</button>
         </div>
-        <div>
-            <div class="derecha">
-                <h2 id="campo2">'s blueprints</h2>
+
+        <div class="p">
+            <div class="izquierda">
+                <h2 id="campo2">'s Blueprints</h2>
 
                 <table id="blueprints">
                     <thead>
                         <tr>
-                            <th scope="col">Blueprint name</th>
-                            <th scope="col">Number of point</th>
+                            <th scope="col">Blueprint Name</th>
+                            <th scope="col">Number of Point</th>
                             <th scope="col">Open</th>
                         </tr>
                         <tbody>
@@ -38,11 +43,12 @@
                     </thead>
                     
                 </table>
+
                 <h2 id="totalPoints"></h2>
             </div>
-            <div class="izquierda">
+            <div class="derecha">
                 <h2 id="canvasTitle">Current Blueprint</h2>
-                <canvas id="myCanvas" width="400" height="400"> </canvas>    
+                <canvas id="myCanvas" width="400" height="400"> </canvas>
             </div>
             
             
@@ -50,7 +56,6 @@
         </div>
 
     </div>
-    
-    
+
 </body>
 </html>

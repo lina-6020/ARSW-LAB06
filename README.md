@@ -25,6 +25,10 @@
         compile group: 'org.webjars', name: 'jquery', version: '3.1.0'
     }               
     ```
+    > Implementación:
+    >
+    > ![image](https://user-images.githubusercontent.com/59893804/111018297-12406b00-8386-11eb-8f83-4ff3c3d2f900.png)
+
 
 ## Front-End - Vistas
 
@@ -33,10 +37,19 @@
     ```
     src/main/resources/static
     ```
+    > Directorio:
+    >
+    > ![image](https://user-images.githubusercontent.com/59893804/111018483-01442980-8387-11eb-96e4-93c613d3d6b0.png)
 
-4. Cree, en el directorio anterior, la página index.html, sólo con lo básico: título, campo para la captura del autor, botón de 'Get blueprints', campo donde se mostrará el nombre del autor seleccionado, [la tabla HTML](https://www.w3schools.com/html/html_tables.asp) donde se mostrará el listado de planos (con sólo los encabezados), y un campo en donde se mostrará el total de puntos de los planos del autor. Recuerde asociarle identificadores a dichos componentes para facilitar su búsqueda mediante selectores.
 
-5. En el elemento \<head\> de la página, agregue las referencia a las librerías de jQuery, Bootstrap y a la hoja de estilos de Bootstrap. 
+
+2. Cree, en el directorio anterior, la página index.html, sólo con lo básico: título, campo para la captura del autor, botón de 'Get blueprints', campo donde se mostrará el nombre del autor seleccionado, [la tabla HTML](https://www.w3schools.com/html/html_tables.asp) donde se mostrará el listado de planos (con sólo los encabezados), y un campo en donde se mostrará el total de puntos de los planos del autor. Recuerde asociarle identificadores a dichos componentes para facilitar su búsqueda mediante selectores.
+    > Vista:
+    >
+    > ![image](https://user-images.githubusercontent.com/59893804/111018796-0609dd00-8389-11eb-93ba-698073986882.png)
+
+
+3. En el elemento \<head\> de la página, agregue las referencia a las librerías de jQuery, Bootstrap y a la hoja de estilos de Bootstrap. 
     ```html
     <head>
         <title>Blueprints</title>
@@ -48,14 +61,21 @@
         <link rel="stylesheet"
           href="/webjars/bootstrap/4.1.2/css/bootstrap.min.css" />
     ```
+    > Implementación:
+    >
+    > ![image](https://user-images.githubusercontent.com/59893804/111018555-7f083500-8387-11eb-821e-abfbac10b5af.png)
 
 
-5. Suba la aplicación (mvn spring-boot:run), y rectifique:
+4. Suba la aplicación (mvn spring-boot:run), y rectifique:
     1. Que la página sea accesible desde:
     ```
     http://localhost:8080/index.html
     ```
     2. Al abrir la consola de desarrollador del navegador, NO deben aparecer mensajes de error 404 (es decir, que las librerías de JavaScript se cargaron correctamente).
+    
+    > Vista browser y consola:
+    >
+    > ![image](https://user-images.githubusercontent.com/59893804/111018524-3fd9e400-8387-11eb-92bb-6affe4c33600.png)
 
 ## Front-End - Lógica
 
@@ -97,7 +117,11 @@
 
 10. Verifique que la aplicación ahora, además de mostrar el listado de los planos de un autor, permita seleccionar uno de éstos y graficarlo. Para esto, haga que en las filas generadas para el punto 5 incluyan en la última columna un botón con su evento de clic asociado a la operación hecha anteriormente (enviándo como parámetro los nombres correspondientes).
 
+    > ![image](https://user-images.githubusercontent.com/59893804/111018853-8597ac00-8389-11eb-993e-e1abb03f508d.png)
+
 11. Verifique que la aplicación ahora permita: consultar los planos de un auto y graficar aquel que se seleccione.
+
+    > ![image](https://user-images.githubusercontent.com/59893804/111018843-6a2ca100-8389-11eb-837a-64da6ede7c32.png)
 
 12. Una vez funcione la aplicación (sólo front-end), haga un módulo (llámelo 'apiclient') que tenga las mismas operaciones del 'apimock', pero que para las mismas use datos reales consultados del API REST. Para lo anterior revise [cómo hacer peticiones GET con jQuery](https://api.jquery.com/jquery.get/), y cómo se maneja el esquema de _callbacks_ en este contexto.
 
